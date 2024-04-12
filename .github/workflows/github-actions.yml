@@ -8,4 +8,4 @@ jobs:
           - uses: actions/checkout@master
             with:
               python-version: '3.11'
-          - name: Install requirements
+          - name: Install requirement
