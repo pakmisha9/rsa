@@ -2,7 +2,7 @@ name: rsa
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-    init:
+    build:
         runs-on: ubuntu-latest
         steps:
           # Чекаутим код
