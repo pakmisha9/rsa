@@ -45,7 +45,7 @@ if __name__ == "__main__":
     private_key, public_key = generate_rsa_keys()
 
     # Шифрование и дешифрование сообщения
-    message = "Hello, RSA!"
+    message = "Hello, World!"
     encrypted_message = encrypt_message(message, public_key)
     decrypted_message = decrypt_message(encrypted_message, private_key)
 
