@@ -8,7 +8,7 @@ jobs:
           # Чекаутим код
           - uses: actions/checkout@master
             # Устанавливаем python нужной версии
-          - uses: actions/setup-python@v3.11
+#          - uses: actions/setup-python@v3.11
             with:
               python-version: '3.11'
           - name: Install requirements
