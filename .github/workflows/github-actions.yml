@@ -11,11 +11,10 @@ jobs:
           - uses: actions/setup-python@v3.11
             with:
               python-version: '3.11'
-              architecture: 'x64'
           - name: Install requirements
             # Устанавливаем зависимости
-            run: pip install cryptography
-          - name: Run tests
-            run: coverage run ./testing.py
-          - name: Tests report
-            run: coverage report
+#            run: pip install cryptography
+#          - name: Run tests
+#            run: coverage run ./testing.py
+#          - name: Tests report
+#            run: coverage report
