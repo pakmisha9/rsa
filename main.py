@@ -1,6 +1,7 @@
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.asymmetric import padding, rsa
+import sys
 
 # Генерация открытого и закрытого ключей
 # Возвращает private_key, public_key
@@ -39,6 +40,18 @@ def decrypt_message(encrypted_message, private_key):
     )
     return decrypted_message.decode()
 
+# if __name__ == "__main__":
+#     # Генерация ключей
+#     private_key, public_key = generate_rsa_keys()
+#
+#     # Получение сообщения от пользователя
+#     message = sys.argv[1]
+#     encrypted_message = encrypt_message(message, public_key)
+#     decrypted_message = decrypt_message(encrypted_message, private_key)
+#
+#     print("Original message:", message)
+#     print("Encrypted message:", encrypted_message)
+#     print("Decrypted message:", decrypted_message)
 # Пример использования
 if __name__ == "__main__":
     # Генерация ключей
@@ -53,4 +66,4 @@ if __name__ == "__main__":
     print("Encrypted message:", encrypted_message)
     print("Decrypted message:", decrypted_message)
 
-
+#
